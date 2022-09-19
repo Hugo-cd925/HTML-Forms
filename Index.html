@@ -19,21 +19,22 @@
             <label for="email">Email</label>
             <input type="email" placeholder="your@email.com" id="email" name='email' required>
         </div>
-
+            <!-- Type hides characters -->
         <div>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
         </div>
-
+            <!-- Numbers only with min/max -->
         <div>
             <label for="age">Age</label>
             <input type="number" id="age" name="age" min="1" max="101" >
         </div>
+        <!-- Date format -->
        <div>
         <label for="date" >Birthday</label>
         <input type="date" name="date" id="date" min="2021-10-01" >
        </div>
-
+        <!-- Checkbox could use more research/clarification -->
        <div>
             Favorite colors
             <div>
@@ -45,6 +46,7 @@
                 <input type="checkbox" name ='blue' id="blue">
             </div>
        </div>
+       <!-- Radio Buttons to only select one option -->
        <div>
         Gender
         <div>
@@ -56,9 +58,10 @@
             <input type="radio" name ="gender" id="female" value="female">
         </div>
        </div>
+
+       <!-- Drop-down that gives options on what to choose. Can be made to choose multiple options. -->
        <div>
         <label for="state">State</label>
-
         <!-- Option labels can either be put inside tags or using label. -->
         <select>
             <option value="CA">
@@ -67,22 +70,30 @@
             <option label="OR" value="OR"></option>
         </select>
        </div>
+
+       <!-- Text area allows for writing inside and adjustable in size depending on needs. Can be set to fixed. -->
        <div>
         <label for="bio">BIO</label>
         <textarea id="bio" ></textarea>
        </div>
+
        <div>
         <!-- Meant to hide input can be used with javascript to change type so it can be visible. -->
         <input type="hidden" name="hidden" >
        </div>
+
+       <!-- Phone number with keyboard for mobile users. -->
        <div>
         <label for="phone">Phone #</label>
         <input type="tel" name="phone" id="phone">
        </div>
+
+       <!-- Set for URL like linking pictures -->
        <div>
         <label>URL</label>
         <input type="url" name="url" id="url">
        </div>
+       
         <div>
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
