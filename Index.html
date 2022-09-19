@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Set this into URL -->
+    <form action='results.html' method="GET">
+        <!-- Each div seperates the elements onto new lines -->
+        <div>
+            <label for="name" >Name</label>
+            <input type="text" id="name" name='name' placeholder="Your Name" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="your@email.com" id="email" name='email' required>
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" max="101" >
+        </div>
+       <div>
+        <label for="date" >Birthday</label>
+        <input type="date" name="date" id="date" min="2021-10-01" >
+       </div>
+
+       <div>
+            Favorite colors
+            <div>
+                <label for="red">Red</label>
+                <input type="checkbox" name="red" id="red">
+            </div>
+            <div>
+                <label for="blue">Blue</label>
+                <input type="checkbox" name ='blue' id="blue">
+            </div>
+       </div>
+       <div>
+        Gender
+        <div>
+            <label for="male" >Male</label>
+            <input type="radio" name ="gender" id="male" value="male">
+        </div>
+        <div>
+            <label for="female" >Female</label>
+            <input type="radio" name ="gender" id="female" value="female">
+        </div>
+       </div>
+       <div>
+        <label for="state">State</label>
+
+        <!-- Option labels can either be put inside tags or using label. -->
+        <select>
+            <option value="CA">
+                CA
+            </option>
+            <option label="OR" value="OR"></option>
+        </select>
+       </div>
+       <div>
+        <label for="bio">BIO</label>
+        <textarea id="bio" ></textarea>
+       </div>
+       <div>
+        <!-- Meant to hide input can be used with javascript to change type so it can be visible. -->
+        <input type="hidden" name="hidden" >
+       </div>
+       <div>
+        <label for="phone">Phone #</label>
+        <input type="tel" name="phone" id="phone">
+       </div>
+       <div>
+        <label>URL</label>
+        <input type="url" name="url" id="url">
+       </div>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
